@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="pageContainer">
+        <div id="sidepanel">
+            <div id="sidepanelLogo">
+                <svg class="big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>flask</title><path d="M13,6H14V5C14,4.45 13.55,4 13,4H10C9.45,4 9,4.45 9,5V6H10V8.07L4.29,17.97C4.1,18.27 4,18.62 4,19C4,20.1 4.9,21 6,21H17C18.1,21 19,20.1 19,19C19,18.62 18.9,18.27 18.71,17.97L13,8.07V6M6,22C4.34,22 3,20.66 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V7C8.45,7 8,6.55 8,6V5C8,3.9 8.9,3 10,3H13C14.1,3 15,3.9 15,5V6C15,6.55 14.55,7 14,7V7.81L19.5,17.37C19.82,17.84 20,18.4 20,19C20,20.66 18.66,22 17,22H6M12.29,15.29L13.92,13.67L17,19H6L9.66,12.66L12.29,15.29M12.29,16.71L9.88,14.29L7.73,18H15.27L13.71,15.29L12.29,16.71M12,10C12.55,10 13,10.45 13,11C13,11.55 12.55,12 12,12C11.45,12 11,11.55 11,11C11,10.45 11.45,10 12,10Z" /></svg><h1>Dashboard</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M16,8.41L11.5,3.91L4.41,11H6V12L6,19H9V13H14V19H17V11H18.59L17,9.41V6H16V8.41M2,12L11.5,2.5L15,6V5H18V9L21,12H18V20H13V14H10V20H5V12H2Z" /></svg> Home</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M11.5,14C15.64,14 19,15.57 19,17.5V20H4V17.5C4,15.57 7.36,14 11.5,14M18,17.5C18,16.12 15.09,15 11.5,15C7.91,15 5,16.12 5,17.5V19H18V17.5M11.5,5C13.43,5 15,6.57 15,8.5C15,10.43 13.43,12 11.5,12C9.57,12 8,10.43 8,8.5C8,6.57 9.57,5 11.5,5M11.5,6C10.12,6 9,7.12 9,8.5C9,9.88 10.12,11 11.5,11C12.88,11 14,9.88 14,8.5C14,7.12 12.88,6 11.5,6Z" /></svg> Profile</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email</title><path d="M5,5H18C19.66,5 21,6.34 21,8V17C21,18.66 19.66,20 18,20H5C3.34,20 2,18.66 2,17V8C2,6.34 3.34,5 5,5M5,6C4.5,6 4.06,6.17 3.72,6.47L11.5,11.5L19.28,6.47C18.94,6.17 18.5,6 18,6H5M11.5,12.71L3.13,7.28C3.05,7.5 3,7.75 3,8V17C3,18.1 3.9,19 5,19H18C19.1,19 20,18.1 20,17V8C20,7.75 19.95,7.5 19.87,7.28L11.5,12.71Z" /></svg> Messages</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock</title><path d="M11.5,3C16.75,3 21,7.25 21,12.5C21,17.75 16.75,22 11.5,22C6.25,22 2,17.75 2,12.5C2,7.25 6.25,3 11.5,3M11.5,4C6.81,4 3,7.81 3,12.5C3,17.19 6.81,21 11.5,21C16.19,21 20,17.19 20,12.5C20,7.81 16.19,4 11.5,4M11,7H12V12.42L16.7,15.13L16.2,16L11,13V7Z" /></svg> History</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clipboard-text</title><path d="M6,5H8.5C8.5,3.34 9.84,2 11.5,2C13.16,2 14.5,3.34 14.5,5H17C18.66,5 20,6.34 20,8V19C20,20.66 18.66,22 17,22H6C4.34,22 3,20.66 3,19V8C3,6.34 4.34,5 6,5M6,6C4.9,6 4,6.9 4,8V19C4,20.1 4.9,21 6,21H17C18.1,21 19,20.1 19,19V8C19,6.9 18.1,6 17,6H16V9H7V6H6M8,8H15V6H8V8M11.5,3C10.4,3 9.5,3.9 9.5,5H13.5C13.5,3.9 12.6,3 11.5,3M6,11H17V12H6V11M6,14H17V15H6V14M6,17H15V18H6V17Z" /></svg> Tasks</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>factory</title><path d="M2,8L9,12.04V8L16,12V3H21V12H21V22H2V8M17,14L10,9.73V13.77L3,9.73V21H20V12H20V4H17V14M5,15H8V16H5V15M5,18H10V19H5V18M12,15H15V16H12V15M12,18H18V19H12V18Z" /></svg> Community</a> </li>
+                </ul>
+            </div>
+            <div id="lowernav">
+                <ul>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>settings</title><path d="M19.59,15.5L17.77,14.2C18.07,13.12 18.09,11.95 17.77,10.78L19.59,9.5L18.14,7L16.11,7.92C15.32,7.12 14.32,6.5 13.15,6.21L12.95,4H10.05L9.85,6.21C8.68,6.5 7.68,7.12 6.89,7.92L4.86,7L3.41,9.5L5.23,10.78C4.91,11.95 4.93,13.12 5.23,14.2L3.41,15.5L4.86,18L6.89,17.07C7.68,17.86 8.68,18.46 9.85,18.77L10.05,21H12.95L13.15,18.77C14.32,18.46 15.32,17.86 16.11,17.07L18.14,18L19.59,15.5M13.5,3C13.77,3 14,3.2 14,3.46L14.18,5.5C14.94,5.78 15.62,6.19 16.23,6.68L18.08,5.81C18.31,5.69 18.6,5.77 18.74,6L20.74,9.5C20.88,9.71 20.8,10 20.58,10.15L18.91,11.32C19.04,12.12 19.03,12.91 18.91,13.68L20.58,14.85C20.8,15 20.88,15.29 20.74,15.5L18.74,19C18.6,19.21 18.31,19.29 18.08,19.17L16.23,18.31C15.62,18.8 14.94,19.2 14.18,19.5L14,21.5C14,21.79 13.77,22 13.5,22H9.5C9.22,22 9,21.78 9,21.5L8.82,19.5C8.06,19.2 7.38,18.8 6.77,18.31L4.92,19.17C4.69,19.29 4.4,19.21 4.26,19L2.26,15.5C2.12,15.29 2.2,15 2.42,14.85L4.09,13.68C3.97,12.91 3.96,12.12 4.09,11.32L2.42,10.15C2.2,10 2.12,9.71 2.26,9.5L4.26,6C4.4,5.77 4.69,5.69 4.92,5.81L6.77,6.68C7.38,6.19 8.06,5.78 8.82,5.5L9,3.46C9,3.2 9.23,3 9.5,3H13.5M11.5,9C13.43,9 15,10.57 15,12.5C15,14.43 13.43,16 11.5,16C9.57,16 8,14.43 8,12.5C8,10.57 9.57,9 11.5,9M11.5,10C10.12,10 9,11.12 9,12.5C9,13.88 10.12,15 11.5,15C12.88,15 14,13.88 14,12.5C14,11.12 12.88,10 11.5,10Z" /></svg> Settings</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>help</title><path d="M11,22V20H12V22H11M11,17.5C11,13 16,11.5 16,8.5C16,6 14,4 11.5,4C9.18,4 7.28,5.75 7.03,8H6C6.28,5.2 8.63,3 11.5,3C14.54,3 17,5.46 17,8.5C17,12 12,13 12,17.5V18H11V17.5Z" /></svg> Support</a> </li>
+                    <li> <a href=""><svg class="small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>shield</title><path d="M11.5,3.11L19,6.63V11.64C19,16.45 15.78,20.9 11.5,22.04C7.22,20.9 4,16.45 4,11.64V6.63M11.5,23.07C16.4,21.84 20,16.94 20,11.64V6L11.5,2L3,6V11.64C3,16.94 6.6,21.84 11.5,23.07Z" /></svg> Privacy</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="topPan">
+                <div id="searchbar">
+                    <form action="submit">
+                        <input type="text" name="search" id="search" />
+                    </form>
+                </div>
+                <div id="profileButtons">User Name</div>
+                <div id="greeting">Hi there,
+                    <h2>User Name</h2>
+                </div>
+                <div id="topBtns">
+                    <button>New</button><button>Upload</button><button>Save</button>
+                </div>
+        </div>
+
+        <div id="mainbox">
+                <div id="headerboxProj">
+                    <h2>Your Projects</h2>
+                </div>
+                <div id="projectlist">
+                    <div id="project">
+                        <p>Project project project</p>
+                    </div>
+                    <div id="project">
+                        <p>Project project project</p>
+                    </div>
+                    <div id="project">
+                        <p>Project project project</p>
+                    </div>
+                    <div id="project">
+                        <p>Project project project</p>
+                    </div>
+                    <div id="project">
+                        <p>Project project project</p>
+                    </div>
+                    <div id="project">
+                        <p>Project project project</p>
+                    </div>
+            </div>
+
+            <div id="rightside">
+                <div id="announcements">
+                    <div id="headerboxAnnounce">
+                        <h2>Announcements</h2>
+                    </div>
+                    <div id="announced">
+                        <h3>Site Maintenance</h3>
+                        <p>Some things happened wow things okay things wow</p>
+                    </div>
+                    <div id="announced">
+                        <h3>Site Maintenance</h3>
+                        <p>Some things happened wow things okay things wow</p>
+                    </div>
+                    <div id="announced">
+                        <h3>Site Maintenance</h3>
+                        <p>Some things happened wow things okay things wow</p>
+                    </div>
+                </div>
+
+                <div id="trending">
+                    <div id="headerboxTrends">
+                        <h2>Trending</h2>
+                    </div>
+                    <div id="trend">
+                        <h3>Trending</h3>
+                        <p>Trendy trendy trends</p>
+                    </div>
+                    <div id="trend">
+                        <h3>Trending</h3>
+                        <p>Trendy trendy trends</p>
+                    </div>
+                    <div id="trend">
+                        <h3>Trending</h3>
+                        <p>Trendy trendy trends</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
