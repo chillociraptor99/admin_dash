@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="pageContainer">
+
         <div id="sidepanel">
             <div id="sidepanelLogo">
                 <svg class="big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>flask</title><path d="M13,6H14V5C14,4.45 13.55,4 13,4H10C9.45,4 9,4.45 9,5V6H10V8.07L4.29,17.97C4.1,18.27 4,18.62 4,19C4,20.1 4.9,21 6,21H17C18.1,21 19,20.1 19,19C19,18.62 18.9,18.27 18.71,17.97L13,8.07V6M6,22C4.34,22 3,20.66 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V7C8.45,7 8,6.55 8,6V5C8,3.9 8.9,3 10,3H13C14.1,3 15,3.9 15,5V6C15,6.55 14.55,7 14,7V7.81L19.5,17.37C19.82,17.84 20,18.4 20,19C20,20.66 18.66,22 17,22H6M12.29,15.29L13.92,13.67L17,19H6L9.66,12.66L12.29,15.29M12.29,16.71L9.88,14.29L7.73,18H15.27L13.71,15.29L12.29,16.71M12,10C12.55,10 13,10.45 13,11C13,11.55 12.55,12 12,12C11.45,12 11,11.55 11,11C11,10.45 11.45,10 12,10Z" /></svg><h1>Dashboard</h1>
@@ -33,12 +34,17 @@
         <div id="topPan">
                 <div id="searchbar">
                     <form action="submit">
+                        <svg class="smallTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,4C13.09,4 16,6.91 16,10.5C16,12.12 15.41,13.6 14.43,14.73L20.08,20.38L19.37,21.09L13.72,15.44C12.59,16.41 11.11,17 9.5,17C5.91,17 3,14.09 3,10.5C3,6.91 5.91,4 9.5,4M9.5,5C6.46,5 4,7.46 4,10.5C4,13.54 6.46,16 9.5,16C12.54,16 15,13.54 15,10.5C15,7.46 12.54,5 9.5,5Z" /></svg>
                         <input type="text" name="search" id="search" />
                     </form>
                 </div>
-                <div id="profileButtons">User Name</div>
-                <div id="greeting">Hi there,
-                    <h2>User Name</h2>
+                <div id="profileButtons"><svg class="smallTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell</title><path d="M12,4.5C12,4.22 11.78,4 11.5,4C11.22,4 11,4.22 11,4.5V6.03C8.75,6.28 7,8.18 7,10.5V16.41L5.41,18H17.59L16,16.41V10.5C16,8.18 14.25,6.28 12,6.03V4.5M11.5,3C12.33,3 13,3.67 13,4.5V5.21C15.31,5.86 17,8 17,10.5V16L20,19H3L6,16V10.5C6,8 7.69,5.86 10,5.21V4.5C10,3.67 10.67,3 11.5,3M11.5,22C10.29,22 9.28,21.14 9.05,20H10.09C10.29,20.58 10.85,21 11.5,21C12.15,21 12.71,20.58 12.91,20H13.95C13.72,21.14 12.71,22 11.5,22Z" /></svg><img src="./icons/swirledIcon.jpg" class="userpic"><h3>Chill Ociraptor</h3></div>
+                <div id="greeting">
+                    <img src="./icons/swirledIcon.jpg" class="userpicBig">
+                    <div id="greetingWrap">
+                        Hi there,<br>
+                        <h2>Chill Ociraptor  (@chill)</h2>
+                    </div>
                 </div>
                 <div id="topBtns">
                     <button>New</button><button>Upload</button><button>Save</button>
@@ -46,69 +52,82 @@
         </div>
 
         <div id="mainbox">
-                <div id="headerboxProj">
-                    <h2>Your Projects</h2>
+
+            <div id="headerboxProj">
+                <h2>Your Projects</h2>
+            </div>
+            <div id="projects">
+                <div id="project">
+                   <h3>A new admin panel</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
                 </div>
-                <div id="projectlist">
-                    <div id="project">
-                        <p>Project project project</p>
-                    </div>
-                    <div id="project">
-                        <p>Project project project</p>
-                    </div>
-                    <div id="project">
-                        <p>Project project project</p>
-                    </div>
-                    <div id="project">
-                        <p>Project project project</p>
-                    </div>
-                    <div id="project">
-                        <p>Project project project</p>
-                    </div>
-                    <div id="project">
-                        <p>Project project project</p>
-                    </div>
+                <div id="project">
+                    <h3>A new admin panel</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
+                </div>
+                <div id="project">
+                    <h3>A new admin panel</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
+                </div>
+                <div id="project">
+                    <h3>A new admin panel</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
+                </div>
+                <div id="project">
+                    <h3>A new admin panel</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
+                </div>
+                <div id="project">
+                    <h3>A new admin panel</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
+                </div>
             </div>
 
-            <div id="rightside">
-                <div id="announcements">
-                    <div id="headerboxAnnounce">
-                        <h2>Announcements</h2>
-                    </div>
-                    <div id="announced">
-                        <h3>Site Maintenance</h3>
-                        <p>Some things happened wow things okay things wow</p>
-                    </div>
-                    <div id="announced">
-                        <h3>Site Maintenance</h3>
-                        <p>Some things happened wow things okay things wow</p>
-                    </div>
-                    <div id="announced">
-                        <h3>Site Maintenance</h3>
-                        <p>Some things happened wow things okay things wow</p>
-                    </div>
+            <div id="headerboxAnnounce">
+                <h2>Announcements</h2>
+            </div>
+            <div id="announcements">
+                <div id="announcement">
+                    <h3>Site Maintenance</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor magna non faucibus bibendum. Sed nunc dolor, ornare non odio eu, euismod imperdiet tellus. Etiam lobortis elementum quam sagittis eleifend.</p>
                 </div>
+                <div id="break"><hr></div>
+                <div id="announcement">
+                    <h3>Community Share Day</h3>
+                    <p> Maecenas in lectus non nibh hendrerit tincidunt ut id nunc. Nullam eu quam ligula. Vestibulum id dui fermentum, lacinia sem molestie, consequat quam. Donec porttitor nulla eu ultricies consectetur. Donec vel elementum magna. Sed a leo sed lectus tincidunt dictum. Nam id tristique velit.</p>
+                </div>
+                <div id="break"><hr></div>
+                <div id="announcement">
+                    <h3>Updated Privacy Policy</h3>
+                    <p> Sed ultrices orci id eros posuere dapibus. Integer iaculis, orci non egestas eleifend, orci urna aliquam metus, eget maximus erat ipsum ut ipsum. Curabitur interdum pellentesque ornare. Suspendisse ac sodales dolor, sit amet pretium felis. Aenean pretium bibendum condimentum.</p>
+                </div>
+            </div>
 
-                <div id="trending">
-                    <div id="headerboxTrends">
-                        <h2>Trending</h2>
-                    </div>
-                    <div id="trend">
-                        <h3>Trending</h3>
-                        <p>Trendy trendy trends</p>
-                    </div>
-                    <div id="trend">
-                        <h3>Trending</h3>
-                        <p>Trendy trendy trends</p>
-                    </div>
-                    <div id="trend">
-                        <h3>Trending</h3>
-                        <p>Trendy trendy trends</p>
-                    </div>
+
+            <div id="headerboxTrends">
+                <h2>Trending</h2>
+            </div>
+            <div id="trends">
+                <div id="trend">
+                    <img src="./icons/bobaIcon.jpg" class="userpic">
+                    <span><h3><a href="">@BobaFett</a></h3>Leading with respect </span>
+                </div>
+                <div id="trend">
+                    <img src="./icons/conesIcon.jpg" class="userpic">
+                    <span><h3><a href="">@MariaWindle</a></h3>Putting down roots</span>
+                </div>
+                <div id="trend">
+                    <img src="./icons/kittyIcon.jpg" class="userpic">
+                    <span><h3><a href="">@FelixTheCat</a></h3>When to paws</span>
+                </div>
+                <div id="trend">
+                    <img src="./icons/shapesIcon.jpg" class="userpic">
+                    <span><h3><a href="">@DominikAndres</a></h3>Overflowing creativity</span>
                 </div>
             </div>
 
         </div>
+
     </div>
 
 </body>
